@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+from misc.utility.scons_hints import *
+
+Import("env")
+Import("env_modules")
+
+env_safe_call = env_modules.Clone()
+
+# Add all .cpp files in this directory to the build.
+env_safe_call.add_source_files(env.modules_sources, "*.cpp")
+
+# If you split code into a subfolder (e.g. "src/"), glob that too:
+# env_safe_call.add_source_files(env.modules_sources, "src/*.cpp")
