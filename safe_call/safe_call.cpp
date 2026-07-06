@@ -3,7 +3,6 @@
 
 SafeCall *SafeCall::singleton = nullptr;
 
-// Initialisierung der Thread-lokalen Variable
 thread_local bool SafeCall::safe_mode = false;
 
 void SafeCall::_bind_methods() {
@@ -25,7 +24,7 @@ void SafeCall::_error_handler(void *p_ud, const char *p_func, const char *p_file
     // 2. Choose the most appropriate message for the log and dictionary
     const char *log_msg = (safe_descr[0] != '\0') ? safe_descr : safe_err;
 
-    // 3. Now absolutely safe against segfaults
+    // 3. safe against segfaults
     printf("[SafeCall] error_handler fired: %s\n", log_msg); 
 
     if (p_type == ERR_HANDLER_ERROR || p_type == ERR_HANDLER_SCRIPT) {
