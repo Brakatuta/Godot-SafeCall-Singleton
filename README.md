@@ -30,12 +30,12 @@ godot/
 └── modules/
     └── safe_call/
         ├── config.py
-        ├── pcall_patch.py
         ├── register_types.h
         ├── resgister_types.cpp
         ├── safe_call.cpp
         ├── safe_call.h
         └── SCsub
+└── pcall_patch.py
 ```
 
 ### 2. Patch the GDScript VM
