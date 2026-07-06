@@ -48,7 +48,7 @@ Run the following command from the root of your Godot source directory:
 python3 modules/safe_call/pcall_patch.py --add modules/gdscript/gdscript_vm.cpp
 ```
 
-> ℹ️ Note: The patcher is fully conditional. It injects code that evaluates at runtime whether a protected call is active.
+> ℹ️ Note: The patcher is fully conditional. It injects code that evaluates at runtime whether a protected call is active. You can use the --remove argument to reverse changes to gdscript_vm.cpp.
 
 ### 3. Compile Godot
 
