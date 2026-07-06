@@ -28,13 +28,13 @@ Clone or copy the SafeCall module files into the `modules/` directory of your Go
 ```text
 godot/
 └── modules/
-    └── safe_call/
-        ├── config.py
-        ├── register_types.h
-        ├── resgister_types.cpp
-        ├── safe_call.cpp
-        ├── safe_call.h
-        └── SCsub
+      └── safe_call/
+            ├── config.py
+            ├── register_types.h
+            ├── resgister_types.cpp
+            ├── safe_call.cpp
+            ├── safe_call.h
+            └── SCsub
 └── pcall_patch.py
 ```
 
