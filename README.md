@@ -25,6 +25,19 @@ To use Godot SafeCall, you need to compile the Godot Engine from source.
 
 Clone or copy the SafeCall module files into the `modules/` directory of your Godot Engine source code.
 
+```text
+godot/
+└── modules/
+    └── safe_call/
+        ├── config.py
+        ├── pcall_patch.py
+        ├── register_types.h
+        ├── resgister_types.cpp
+        ├── safe_call.cpp
+        ├── safe_call.h
+        └── SCsub
+```
+
 ### 2. Patch the GDScript VM
 
 Because Godot strips internal safety checks in release builds (`#ifdef DEBUG_ENABLED`), you must run the included Python patcher to inject conditional runtime checks into the GDScript Virtual Machine.
